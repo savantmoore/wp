@@ -1,0 +1,264 @@
+/**
+ * Admin CSS
+ *
+ * This file is used to add styles to the admin pages of each custom post type.
+ *
+ * @link       https://www.wpdispensary.com
+ * @since      1.0.0
+ *
+ * @package    WP_Dispensary
+ * @subpackage WP_Dispensary/admin/css
+ */
+
+/** Metaboxes */
+#wpdispensary_prices .inside,
+#wpdispensary_concentrateprices .inside,
+#wpdispensary_compounds .inside,
+#wpdispensary_clonedetails .inside,
+#wpdispensary_thc_cbd_mg .inside,
+#wpdispensary_thccbdtopical .inside,
+#wpdispensary_grower_product_details .inside {
+    overflow: auto;
+}
+
+#wpdispensary_prices .inside .pricebox {
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+#postbox-container-2 #wpdispensary_prices .inside .pricebox {
+	float: left;
+	margin: 10px 1%;
+	position: relative;
+	width: 18%;
+}
+
+#wpdispensary_concentrateprices .inside .pricebox {
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+#postbox-container-2 #wpdispensary_concentrateprices .inside .pricebox {
+	float: left;
+	margin: 10px 1%;
+	position: relative;
+	width: 23%;
+}
+
+#wpdispensary_compounds .inside .compoundbox {
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+#postbox-container-2 #wpdispensary_compounds .inside .compoundbox {
+    width: 18%;
+    float: left;
+    margin: 0 1%;
+}
+
+#wpdispensary_grower_product_details .inside .growerbox,
+#wpdispensary_clonedetails .inside .growerbox {
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+#postbox-container-2 #wpdispensary_clonedetails .inside .growerbox {
+	float: left;
+	margin: 10px 1%;
+	position: relative;
+	width: 23%;
+}
+
+#postbox-container-2 #wpdispensary_grower_product_details .inside .growerbox {
+	float: left;
+	margin: 10px 1%;
+	position: relative;
+	width: 48%;
+}
+
+
+#wpdispensary_thc_cbd_mg .inside .ediblebox {
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+#postbox-container-2 #wpdispensary_thc_cbd_mg .inside .ediblebox {
+	float: left;
+	margin: 10px 1%;
+	position: relative;
+	width: 23%;
+}
+
+#wpdispensary_thccbdtopical .inside .topicalbox {
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+#postbox-container-2 #wpdispensary_thccbdtopical .inside .topicalbox {
+	float: left;
+	margin: 10px 1%;
+	position: relative;
+	width: 23%;
+}
+
+/** Metaboxes `select` width */
+
+select#selected_flowers,
+select#selected_concentrates,
+select#selected_edibles,
+select#selected_prerolls,
+select#selected_topicals,
+select#selected_growers,
+select#selected_gear,
+select#selected_tinctures {
+    width: 100%;
+}
+
+/** Dashboard icons */
+
+#dashboard_right_now .flowers-count a:before,
+#dashboard_right_now .flowers-count span:before,
+#dashboard_right_now .edibles-count a:before,
+#dashboard_right_now .edibles-count span:before,
+#dashboard_right_now .concentrates-count a:before,
+#dashboard_right_now .concentrates-count span:before,
+#dashboard_right_now .prerolls-count a:before,
+#dashboard_right_now .prerolls-count span:before,
+#dashboard_right_now .topicals-count a:before,
+#dashboard_right_now .topicals-count span:before,
+#dashboard_right_now .growers-count a:before,
+#dashboard_right_now .growers-count span:before,
+#dashboard_right_now .gear-count a:before,
+#dashboard_right_now .gear-count span:before,
+#dashboard_right_now .tinctures-count a:before,
+#dashboard_right_now .tinctures-count span:before,
+#dashboard_right_now .coupons-count a:before,
+#dashboard_right_now .coupons-count span:before {
+    background: url(../images/glance-icon.png) no-repeat 2px 0px;
+    content: "";
+    height: 20px;
+    padding-right: 25px;
+}
+
+.toplevel_page_wpdispensary #adminmenu div.wp-menu-image:before {
+    background: url(../images/menu-icon.png) no-repeat 2px 0px;
+    content: "";
+    height: 36px;
+    padding-right: 36px;
+}
+
+.menu-top .toplevel_page_wpd-settings .wp-menu-image.dashicons-before {
+    background: url(../images/menu-icon.png) no-repeat center center;
+    opacity: 0.6;
+}
+
+#toplevel_page_wpd-settings:hover .wp-menu-image.dashicons-before,
+.current.menu-top .toplevel_page_wpd-settings .wp-menu-image.dashicons-before {
+    background: url(../images/menu-icon.png) no-repeat center center;
+    opacity: 1;
+}
+
+
+/**
+ * Featured image in menu items list
+ */
+th#featured_thumb {
+	width: 40px;
+	text-align: center;
+}
+
+.manage-column.column-featured_thumb {
+  text-align: center;
+}
+
+#featured_thumb span.wpd-admin-screen-featured-image-title,
+.wpd-admin-screen-featured-image-title {
+	display: none;
+}
+
+/**
+ * Settings page
+ */
+.wpd-settings-wrap img {
+	width: 280px;
+	max-width: 280px;
+}
+
+.wpd-settings-separator {
+	background: #ccc;
+	border: 0;
+	color: #ccc;
+	height: 1px;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	max-width: 100%;
+}
+
+.metabox-holder .group form h2:first-of-type {
+	display: none;
+}
+
+.metabox-holder .group .form-table h1 {
+	font-weight: 600;
+	font-size: 18px;
+	padding: 0;
+}
+
+.metabox-holder .group .form-table h1:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 24px;
+    height: 3px;
+    background: #ccc;
+    margin-top: 0px;
+}
+
+.wrap.wpd-settings-wrap h1.settings-logo {
+	position: relative;
+}
+
+.wrap.wpd-settings-wrap span.wpd-settings-version {
+	color: #AAA;
+	font-size: 50%;
+	margin-left: 10px;
+	position: absolute;
+	top: 24px;
+}
+
+.metabox-holder .group form select {
+    min-width: 25em;
+}
+
+.group .form-table input.color-picker {
+	max-width: 100px;
+}
+
+/* Widget styles
+-------------------------------------------------------------- */
+
+div.widget[id*=_wpdispensary_] .widget-top,
+div.widget[id*=_wpdispensary_] .widget-top:hover {
+	border-color: #76bd43;
+}
+
+div.widget[id*=_wpdispensary_] .widget-title,
+div.widget[id*=_wpdispensary_] .widget-title h3 {
+	background: #76bd43;
+	color: #FFF;
+}
+
+div.widget[id*=_wpdispensary_] .widget-title .in-widget-title {
+	color: rgba(255,255,255,0.6);
+}
+
+div.widget[id*=_wpdispensary_] .widget-action {
+	color: #FFF;
+}
